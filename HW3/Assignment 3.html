@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+<p>CSC 453 Database Technologies</p>
+
+<p><b>Assignment 3</b></p>
+
+<p>Part A - 40 points</p>
+
+<p>Design a <b>normalized</b> FastCabs (Assignment 1) database schema (3NF).</p>
+
+<p>Create a Word document with the table names and fields.<br/>
+	<b>A diagram is not required,</b> I should be able to easily determine which tables are related, either by foreign key notations/names, or additional comments.
+	<ul><li>Each field should be on a separate line.</li>
+	<li>The data type should be specified for each field.</li>
+	<li>Ensure that all entity and attribute names are meaningful.</li>
+	<li>Primary and foreign keys should be specified (list primary key first).</li>
+	<li>Required fields should be indicated (use NOT NULL).</li>
+	<li>Use (AK, FK) notation to designate alternate and foreign keys.</li>
+	<li>Specify the data type - text, integer, real/number (assume a number has a fractional component), date, time.  Size is not required.</li>
+	<li><b>No multivalued fields.</b></li>
+	<li>Add text for additional comments or notations as needed.</li></ul></p>
+
+<p>A Word document is adequate, simply list each table and it&#39;s data items (fields) on a separate line.</p>
+
+<hr/>
+
+<p>Part B - 6 points each</p>
+
+<p>Given the schema from Figure 8.14 (or 6.14 in the 6<sup>th</sup> edition), specify the following queries in relational algebra (no SQL accepted):
+<ol>
+<li>List all book titles.<br/><br/></li>
+
+<li>List all book titles published by &quot;Addison Wesley&quot;.<br/><br/></li>
+
+<li>List the book titles, and branch names, at each branch where all copies of that title are available for borrowing.<br/><br/></li>
+
+<li>(b) How many copies of the book titled The Lost Tribe are owned by each library branch?<br/><br/></li>
+
+<li>(a) How many copies of the book titled The Lost Tribe are owned by the library branch whose name is &quot;Sharpstown&quot;?<br/><br/></li>
+
+<li>List the names of borrowers with overdue books. (Assume currentDate has today&#39;s date.)<br/><br/></li>
+
+<li>(c) Retrieve the names of all borrowers who do not have any books checked out.<br/><br/></li>
+
+<li>(d) For each book that is loaned out from the &quot;Sharpstown&quot; branch and whose due date is today, retrieve the book title, the borrower&#39;s name, and the borrower&#39;s address. (Assume currentDate has today&#39;s date.)<br/><br/></li>
+
+<li>(g) For each book authored (or co-authored) by &quot;Stephen King&quot;, retrieve the title and the number of copies owned by the library branch whose name is &quot;Central&quot;.<br/><br/></li>
+
+<li>List all book titles that have been borrowed by &quot;Peter Bloomfield&quot;.<br/><br/></li>
+
+</ol></p>
+
+
+
+
+
+<p>&quot;List&quot; simply implies the ouput from an operation or assigning to a result relation.<br/>
+The Greek letters and other symbols <b>are required for any credit</b>. Zero credit for names, initials, etc.<br/>
+A natural join can be indicated with either an asterisk, or a bowtie with no condition.<br/>
+Use parentheses to prioritize multiple operations (do not assume a specific precedence).<br/>
+You can name the result from prior problems to use in later ones if it applies, rather than rewriting the query each time.</p>
+
+<p>Use the operation symbols as described in the slides:<br/>
+	<ul><li>Since attributes can be renamed when a result relation is created, the renames operator (as opposed to the operation) is not required.</li>
+	<li>All of the Greek letter symbols are available in major word processors.</li>
+	<li>If using a capital <font face="Arial">U</font> for the set union symbol, use a sans serif font, like Arial, so that it appears as <font face="Arial">U</font>, rather than U.</li>
+	<li>The set intersection &amp; join symbols are available in both Word and WordPerfect.</li>
+	<li>For the Cartesian product you can use a capital <font face="Arial">X</font> (� is ANSI #215, if using HTML, or under Supplemental Mathematical Operators in Word 2007).</li>
+	<li>As far as I can tell, the join symbol is not in available as a character in Word 2003, although it&#39;s accessible in Word 2007/2010 under Supplemental Mathematical Operators or via the Math AutoCorrect option (may require enabling) by typing &quot;\bowtie&quot; (as well as &quot;\bigcup&quot; and &quot;\bigcap&quot; for the set operators).  Some of the other symbols may be available in Word 2007/2010 as well (and also in PowerPoint 2007/2010).</li>
+	<li>For what it&#39;s worth, all of the symbols, including join, union, and the logical operators, are available as characters in WordPerfect.</li></ul></p>
+
+<p><br/><b>Post your solution in D2L.</b></p>
+
+
+
+<script type="text/javascript" src="/d2l/common/math/MathML.js?v=10.3.0.2146-142 "></script><script type="text/javascript">D2LMathML.DesktopInit('/d2l/common/mathjax/2.1/MathJax.js?config=MML_HTMLorMML','/d2l/common/mathjax/2.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML');</script></body></html>

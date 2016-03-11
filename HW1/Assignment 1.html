@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+<p>CSC 453 Database Technologies</p>
+
+<p><b>Assignment 1</b></p>
+
+<p>All three parts should be included in one document (Word, RTF, text).</p>
+
+<p>Part A - 30 points</p>
+
+<p>Assume the following table is complete, and will never change:
+	<ol type="a">
+	<li>Find 5 functional dependencies. (Full functional dependency only, no partial dependencies.)</li>
+	<li>Find all candidate keys.</li>
+	</ol>
+	(you can use the single letter headings rather than the full attribute names)<br/><br/>
+	<table border="3," cellpadding="3">
+		<tr align="center"><td><b>A</b></td><td><b>B</b></td><td><b>C</b></td><td><b>D</b></td></tr>
+		<tr align="center"><td><b>PILOT</b></td><td><b>FLIGHT</b></td><td><b>DATE</b></td><td><b>DEPARTS</b></td></tr>
+		<tr align="center"><td>Cushing</td><td>83</td><td>9-Aug</td><td>10:15a</td></tr>
+		<tr align="center"><td>Cushing</td><td>116</td><td>10-Aug</td><td>1:25p</td></tr>
+		<tr align="center"><td>Clark</td><td>281</td><td>8-Aug</td><td>5:50a</td></tr>
+		<tr align="center"><td>Clark</td><td>301</td><td>12-Aug</td><td>6:35p</td></tr>
+		<tr align="center"><td>Clark</td><td>83</td><td>11-Aug</td><td>10:15a</td></tr>
+		<tr align="center"><td>Chin</td><td>83</td><td>13-Aug</td><td>10:15a</td></tr>
+		<tr align="center"><td>Chin</td><td>116</td><td>12-Aug</td><td>1:25p</td></tr>
+		<tr align="center"><td>Copely</td><td>281</td><td>9-Aug</td><td>5:50a</td></tr>
+		<tr align="center"><td>Copely</td><td>281</td><td>13-Aug</td><td>5:50a</td></tr>
+		<tr align="center"><td>Copely</td><td>412</td><td>15-Aug</td><td>1:25p</td></tr>
+	</table></p>
+<hr/>
+
+<p>Part B - 30 points</p>
+
+<p>Below is a relational schema for the Northwind database (a sample company supplied with Microsoft Access).
+<table border="1," cellpadding="3">
+<tr><td>CUSTOMERS</td> <td><u>CustomerID</u>, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode,
+					Country, Phone, Fax</td></tr>
+<tr><td>EMPLOYEES</td> <td><u>EmployeeID</u>, LastName, FirstName, TitleOfCourtesy, BirthDate, HireDate, Address, City,
+					Region, PostalCode, Country, HomePhone, Extension, ReportsTo</td></tr>
+<tr><td>PRODUCTS</td> <td><u>ProductID</u>, ProductName, Supplier, Category, QuantityPerUnit, UnitPrice, UnitsInStock,
+					UnitsOnOrder, ReorderLevel, Discontinued</td></tr>
+<tr><td>CATEGORIES</td> <td><u>CategoryID</u>, CategoryName, Description</td></tr>
+<tr><td>SHIPPERS</td> <td><u>ShipperID</u>, CompanyName, Phone</td></tr>
+<tr><td>SUPPLIERS</td> <td><u>SupplierID</u>, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode,
+					Country, Phone, Fax, HomePage</td></tr>
+<tr><td>ORDERS</td> <td><u>OrderID</u>, Customer, Employee, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight,
+					ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry</td></tr>
+<tr><td>ORDER_DETAILS</td> <td><u>Order, Product</u>, UnitPrice, Quantity, Discount</td></tr>
+</table></p>
+
+<p><b>Notes:</b><br/>
+Primary keys are underlined.<br/>
+EMPLOYEES.ReportsTo is the employee number of the employees&#39; supervisor.<br/>
+ORDERS has the header for each order, whereas ORDER_DETAILS has the line items for
+the products ordered.<br/>
+PRODUCTS.UnitsOnOrder refers to the product being ordered from a supplier for restocking,
+and not to a customer having placed an order for it.<br/>
+ORDERS.ShipVia is the shipper for this order</p>
+
+<p>Identify all foreign keys in the above schema - state any assumptions you make.  Note that the foreign key name may not match the spelling of the corresponding primary key.</p>
+<hr/>
+
+<p>Part C - 40 points</p>
+
+<p>A company called FastCabs provides a taxi service to clients.<br/>
+The table shown below displays some details of client bookings for taxis.<br/>
+<table border="1," cellpadding="3">
+<tr><td>JobID</td><td>JobDate</td><td>JobTime</td><td>DriverID</td><td>DriverName</td><td>TaxiID</td><td>ClientID</td><td>ClientName</td><td>JobPickUpAddress</td></tr>
+<tr><td>1</td><td>07/25/14</td><td>10.00</td><td>D1</td><td>Joe Bull</td><td>T1</td><td>C1</td><td>Anne Woo</td><td>1 Storrie Rd, Paisley</td></tr>
+<tr><td>2</td><td>07/25/14</td><td>17.00</td><td>D2</td><td>Tom Win</td><td>T2</td><td>C1</td><td>Anne Woo</td><td>3 High Street, Paisley</td></tr>
+<tr><td>3</td><td>07/29/14</td><td>10.00</td><td>D1</td><td>Joe Bull</td><td>T1</td><td>C1</td><td>Anne Woo</td><td>1 Storrie Rd, Paisley</td></tr>
+<tr><td>4</td><td>08/2/14</td><td>05.00</td><td>D1</td><td>Joe Bull</td><td>T1</td><td>C4</td><td>Karen Bow</td><td>22 Red Road, Paisley</td></tr>
+<tr><td>5</td><td>08/2/14</td><td>13.00</td><td>D3</td><td>Jim Jones</td><td>T3</td><td>C2</td><td>Mark Tin</td><td>1A Lady Lane, Paisley</td></tr>
+<tr><td>6</td><td>08/2/14</td><td>13.00</td><td>D4</td><td>Steven Win</td><td>T1</td><td>C3</td><td>John Seal</td><td>22 Red Road, Paisley</td></tr>
+<tr><td>7</td><td>08/25/14</td><td>10.00</td><td>D2</td><td>Tom Win</td><td>T2</td><td>C5</td><td>Karen Bow</td><td>17 High Street, Paisley</td></tr>
+</table></p>
+
+<p>Assume the table is complete, and will never change.<br/>
+	Assume that a taxi driver is assigned to a single taxi, but a taxi can be assigned to one or more drivers.
+	<ol type="a">
+	<li>Identify 5 functional dependencies that exist between the columns of the table. (Full functional dependency only, no partial dependencies.)</li>
+	<li>Identify the primary key.</li>
+	<li>Find 5 candidate keys (not including the primary key) for the table.</li></ol></p>
+
+<p><br/><b>Post your solution in D2L.</b></p>
+
+
+<script type="text/javascript" src="/d2l/common/math/MathML.js?v=10.3.0.2146-142 "></script><script type="text/javascript">D2LMathML.DesktopInit('/d2l/common/mathjax/2.1/MathJax.js?config=MML_HTMLorMML','/d2l/common/mathjax/2.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML');</script></body></html>

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+<p>CSC 453 Database Technologies</p>
+
+<p><b>Assignment 5</b></p>
+
+<p><ol>
+<li>Code a script with the SQL statements to:<ul><br/>
+	<li>Use CREATE TABLE ... AS ... to create copies of the vendors and invoices tables, named vendors5 and invoices5, respectively.<br/><br/></li>
+	<li>Use ALTER statements to replicate the primary key, <u><b>all</b></u> foreign keys, and <u><b>all</b></u> constraints on the new tables to match the original ones. Foreign keys should reference the copy when possible.<br/><br/></li>
+	<li>Use an ALTER statement to add a column, named Balance, to invoices5. The data type should be the same as the other currency values.<br/><br/></li>
+	<li>Use an UPDATE statement to populate the balance due, which should contain the difference between the invoice total and the sum of the payment and credit.<br/><br/></li></ul></li>
+
+<li>Code a PL/SQL block (i.e. BEGIN ... END) with the statements to:<ul><br/>
+	<li>Add a new vendor and three (3) new invoices, with different totals, to the new tables. Added data should be in the same format as existing data.<br/><br/>
+		The vendor name should be <b>&#39;Your Name, LLC&#39;</b>. (Not the literal &quot;Your Name&quot;).<br/><br/>
+		<b>Use 5 for the vendor, and invoice, terms.</b><br/><br/>
+		The invoice date should be set to the current date (system date, nothing hard-coded), and the due date should be the current date + 30 days.<br/><br/>
+		The invoice total should include a cents amount, and the same value should be used for the balance due. Set the payment and credit to zero.<br/><br/>
+		Add one (1) to the highest value in the table to set the key value for the new records. Do not hard-code any new key values - <b><u>use variables</u></b>.<br/><br/>
+	</li><li>Update the credit in the new invoices for the new vendor, setting it to 10% of the invoice total (rounding to 2 decimal places), and also updating the balance due amount.<br/><br/></li></ul></li>
+
+
+<li>Code the SQL statements to:<ul><br/>
+	<li>List the added records: vendor id &amp; name, invoice id, 2 dates, and 3 currency values (omit payment).<br/><br/>
+		Both dates should be displayed with the full month name, e.g. May 10, 2015, with no extra spaces after the name.<br/><br/>
+	</li><li>Ensure the database is restored to its initial state, dropping created objects.<br/><br/></li></ul></li>
+</ol></p>
+
+<p>&quot;Script&quot; simply implies a collection of SQL statements that I can copy &amp; paste into the Oracle window and execute.  It does not imply executing the code directly from an external file.</p>
+<p>The above steps are not separate; feel free to code all, or 2 &amp; 3, as one block.</p>
+<p>For submission, simply copy &amp; paste the SQL statements and the query output into a document.</p>
+<p>Everything should be in one file that can be ran as is (i.e. <b>one copy &amp; paste</b>, rather than copying code for each section separately).</p>
+<p>All output can be pasted at the end of your solution. Anything prior to that should be either SQL or a comment.</p>
+<p>Post your solution in D2L.</p>
+
+<script type="text/javascript" src="/d2l/common/math/MathML.js?v=10.3.0.2146-142 "></script><script type="text/javascript">D2LMathML.DesktopInit('/d2l/common/mathjax/2.1/MathJax.js?config=MML_HTMLorMML','/d2l/common/mathjax/2.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML');</script></body></html>

@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+<p>CSC 453 Database Technologies</p>
+
+<p><b>Assignment 6</b></p>
+
+<p>Assignment 6 is a modification of Assignment 5:<ul>
+	<li>Modify Step 1 of Assignment 5 to use vendors6 and invoices6.<br/><br/></li>
+	<li>Modify Step 1 of Assignment 5 to delete vendor 101 from vendors6.<br/><br/></li>
+	<li>After the code for Step 1 and prior to the code for Step 2:<br/><br/><ul>
+		<li>Use EXECUTE IMMEDIATE to create a function which accepts 3 number parameters and returns the first parameter minus the sum of the other two.<br/><br/></li>
+		<li>Use EXECUTE IMMEDIATE to create a before insert/update trigger on invoices6 which invokes the function to set the balance due.<br/><br/></li></ul></li>
+	<li>Modify Step 2 of Assignment 5, changing the credit taken to 15%, and deleting the hard-coded amounts for the balance due on the rows inserted into invoices6.<br/><br/></li>
+	<li>Modify Step 3 of Assignment 5 to drop additional objects as needed to ensure that the database is restored to the initial state.<br/><br/></li>
+</ul></p>
+
+<p> Note that &quot;to create&quot; means that &quot;CREATE ... END&quot; are all part of the EXECUTE IMMEDIATE statement string constant, as shown in class.</p>
+
+<p>As Assignment 6 is a modification of Assignment 5 all unmodified steps of Assignment 5 are still required.</p>
+
+<p>Again, all of your code can be in one block if you prefer, but <b>all of it should be executable from one copy &amp; paste into SQL Developer</b>.</p>
+
+<p>Post your solution (SQL and output) in D2L.</p>
+
+
+<script type="text/javascript" src="/d2l/common/math/MathML.js?v=10.3.0.2146-142 "></script><script type="text/javascript">D2LMathML.DesktopInit('/d2l/common/mathjax/2.1/MathJax.js?config=MML_HTMLorMML','/d2l/common/mathjax/2.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML');</script></body></html>

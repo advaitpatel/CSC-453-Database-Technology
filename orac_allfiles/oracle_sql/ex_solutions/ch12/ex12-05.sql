@@ -1,0 +1,2 @@
+GRANT CREATE PUBLIC SYNONYM
+  TO payment_entry;

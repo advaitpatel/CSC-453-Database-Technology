@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+<p>CSC 453 Database Technologies</p>
+
+<p><b>Assignment 7</b></p>
+
+<p>Recreate part of Assignment 5 using Java (JDBC):
+	<ul><li>Only implement the vendor portion (including the insert), using vendors7 as the table name.<br/><br/></li>
+	<li>Omit all code relating to invoices, and the ALTER statements for the vendor table.<br/><br/></li>
+	<li>No need to use PL/SQL as you can use Java variables and constructs.<br/><br/></li>
+	<li>List at least two additional fields (other than the ID and name) from the vendor table.<br/><br/></li>
+	<li>List all vendors, not just the added one. <b>Order the listing by the vendor id descending.</b><br/><br/></li>
+	<li>The output should be in a report format, with column headings, <b>aligned data</b>, and reasonably limited line width.<br/><br/></li>
+	<li>Get the column headings from the metadata.  <b>Do not hard-code them in the program.</b><br/>
+		You can hard-code the column widths to reduce the size if needed, but at least one width before the last field must be obtained from the metadata.<br/>
+		You can change the column headings with an alias in the SQL.<br/><br/></li>
+	<li>Code a finally block which deletes the added table and closes the connection.<br/><br/></li>
+	<li><b>Do not hard-code your user-name or password in the program.  Do not prompt for them.  Use parameters.</b><br/><br/></li></ul></p>
+
+<p>Note that statement.executeUpdate() is required for the SQL DDL statements.</p>
+
+<p>Post your solution in D2L.</p>
+
+
+
+<script type="text/javascript" src="/d2l/common/math/MathML.js?v=10.3.0.2146-142 "></script><script type="text/javascript">D2LMathML.DesktopInit('/d2l/common/mathjax/2.1/MathJax.js?config=MML_HTMLorMML','/d2l/common/mathjax/2.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML');</script></body></html>

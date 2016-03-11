@@ -1,0 +1,19 @@
+As mentioned during class, none of the Assignment 4 questions should generate more than a dozen rows of output.
+
+I just changed the range in Question 5 to 16 months.
+-----------------------------------------------------------------
+When pasting data, simply use a fixed-space font (e.g. Courier) so that the columns align properly.
+
+Screen shots must include all output, both rows & columns, and not be reduced in size.
+
+When warranted, column formatting should be included with each problem. Do not depend on formatting from previous problems as then it won't be formatted when I execute it.
+
+Use formatting so that the output is not spread across more than a couple of lines. Do not just use a tiny font that is barely readable.
+
+If posting a PDF, verify that it is searchable, that is, ensure that I can copy & paste the SQL. I should not have to rekey the SQL.
+
+All currency values should have dollar signs and comma separators.
+
+Do not modify any of the objects and, if you create any objects, include code to remove them.
+
+Zero credit may be given if the output does not match the SQL.
